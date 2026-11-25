@@ -1,12 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
-    <meta name=:viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-  </head>
-  <body>
-    <h1>Hello World</h1>
-    <p>This is my first Github Pages site!</p>
-  </body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erik Stone | Software Engineering Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container nav-content">
+            <a href="#" class="logo">Erik Stone</a>
+            <nav class="nav-links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Experience &amp; Stack</a>
+                <a href="https://www.linkedin.com/in/erik-stone-a96b61132/" target="_blank" rel="noopener noreferrer" class="social-nav-btn linkedin-btn">
+                    <svg height="16" width="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                    </svg>
+                    LinkedIn
+                </a>
+                <a href="https://github.com/stoneerDev" target="_blank" rel="noopener noreferrer" class="social-nav-btn github-btn">
+                    <svg height="16" width="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+                    </svg>
+                    GitHub
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero / About Me Section -->
+        <section id="about" class="hero">
+            <div class="container">
+                <div class="hero-card">
+                    <span class="badge">Open to Software Engineering Opportunities</span>
+                    <h1>Erik Stone</h1>
+                    <p class="subtitle">Computer Science Student, Automotive Engineer, and Aspiring Software Developer</p>
+                    <div class="about-text">
+                        <p>
+                            I am a Computer Science student at Oregon State University (graduating December 2026) bringing an engineering and technical program management background in the automotive sector into full-stack, mobile, and systems software development.
+                        </p>
+                        <p>
+                            My coursework and project work span full-stack web applications, Unix/Linux systems programming in C, and native Android mobile development—focusing on clean architecture, reliable state management, and practical problem-solving.
+                        </p>
+                    </div>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">View School Projects</a>
+                        <a href="https://www.linkedin.com/in/erik-stone-a96b61132/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">LinkedIn Profile</a>
+                        <a href="https://github.com/stoneerDev" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub Profile</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Featured Computer Science Projects</h2>
+                    <p>Academic software engineering builds spanning full-stack web, operating systems, and mobile platforms.</p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1: Web Development -->
+                    <article class="project-card">
+                        <div class="project-top">
+                            <span class="course-tag">Web Development</span>
+                            <h3>Full-Stack MERN Application</h3>
+                            <p class="project-desc">
+                                An end-to-end full-stack web application built on the MERN architecture. Implements a responsive React single-page frontend connected to a RESTful Node.js and Express API with persistent MongoDB document storage and full CRUD operations.
+                            </p>
+                            <ul class="highlights">
+                                <li>Component-based React UI with client-side routing and dynamic state updates</li>
+                                <li>REST API endpoints in Express/Node.js handling data validation and business logic</li>
+                                <li>MongoDB / Mongoose schema modeling for structured persistence</li>
+                            </ul>
+                        </div>
+                        <div class="project-bottom">
+                            <div class="tech-tags">
+                                <span>MongoDB</span>
+                                <span>Express.js</span>
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>JavaScript</span>
+                                <span>REST API</span>
+                            </div>
+                            <a href="https://github.com/stoneerDev/WebDevelopment_stoneer" target="_blank" rel="noopener noreferrer" class="repo-link">
+                                View Repository &rarr;
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: Operating Systems -->
+                    <article class="project-card">
+                        <div class="project-top">
+                            <span class="course-tag">Operating Systems</span>
+                            <h3>Linux Shell Implementation (smallsh)</h3>
+                            <p class="project-desc">
+                                A custom Unix/Linux command-line shell implemented in C, replicating core POSIX shell behavior including process lifecycle management, I/O redirection, built-in commands, and custom signal handling.
+                            </p>
+                            <ul class="highlights">
+                                <li>Process creation and execution using <code>fork()</code>, <code>execvp()</code>, and <code>waitpid()</code></li>
+                                <li>Standard input/output redirection (<code>&lt;</code> and <code>&gt;</code>) via <code>dup2()</code> and file descriptors</li>
+                                <li>Foreground/background execution (<code>&amp;</code>) and custom <code>SIGINT</code> / <code>SIGTSTP</code> signal handlers</li>
+                            </ul>
+                        </div>
+                        <div class="project-bottom">
+                            <div class="tech-tags">
+                                <span>C</span>
+                                <span>Linux / POSIX</span>
+                                <span>Process Control</span>
+                                <span>Signals</span>
+                                <span>File I/O</span>
+                            </div>
+                            <a href="https://github.com/stoneerDev/OperatingSystems_stoneer" target="_blank" rel="noopener noreferrer" class="repo-link">
+                                View Repository &rarr;
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: Mobile Development -->
+                    <article class="project-card">
+                        <div class="project-top">
+                            <span class="course-tag">Mobile Software Development</span>
+                            <h3>Mobile Treasure Hunt App</h3>
+                            <p class="project-desc">
+                                A location-aware Android application built with Kotlin and Jetpack Compose that guides players through real-world checkpoints using live GPS telemetry, Haversine proximity detection, and multi-screen state navigation.
+                            </p>
+                            <ul class="highlights">
+                                <li>Real-time GPS tracking via Google Play Services <code>FusedLocationProviderClient</code></li>
+                                <li>Haversine distance calculations to verify checkpoint arrival and unlock clues</li>
+                                <li>Declarative Jetpack Compose UI with ViewModel state management and runtime permissions</li>
+                            </ul>
+                        </div>
+                        <div class="project-bottom">
+                            <div class="tech-tags">
+                                <span>Kotlin</span>
+                                <span>Jetpack Compose</span>
+                                <span>Android SDK</span>
+                                <span>GPS / Location</span>
+                                <span>MVVM</span>
+                            </div>
+                            <a href="https://github.com/stoneerDev/MobileDev-mobileTreasureHunt" target="_blank" rel="noopener noreferrer" class="repo-link">
+                                View Repository &rarr;
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Technical Stack Summary -->
+        <section id="skills" class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Project Experience &amp; Technical Focus</h2>
+                    <p>Core competencies demonstrated across these three implementations.</p>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-box">
+                        <h4>Full-Stack Web Engineering</h4>
+                        <p>Designing RESTful backend services, NoSQL data schemas, and responsive component-driven frontends with JavaScript, React, Node.js, Express, and MongoDB.</p>
+                    </div>
+                    <div class="skill-box">
+                        <h4>Systems &amp; Low-Level Programming</h4>
+                        <p>Writing memory-safe C on Linux, managing child processes, file descriptors, environment variable expansion, and asynchronous OS signals.</p>
+                    </div>
+                    <div class="skill-box">
+                        <h4>Mobile &amp; Location-Based Apps</h4>
+                        <p>Building reactive Android interfaces in Kotlin and Jetpack Compose, integrating hardware location sensors, geospatial math, and lifecycle-aware architecture.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p class="footer-note">Portfolio website developed with the use of AI, development projects without it :)</p>
+            <p class="footer-meta">
+                &copy; <span id="year">2026</span> Erik Stone &bull;
+                <a href="https://www.linkedin.com/in/erik-stone-a96b61132/" target="_blank" rel="noopener noreferrer">LinkedIn</a> &bull;
+                <a href="https://github.com/stoneerDev" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
 </html>
